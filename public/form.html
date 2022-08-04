@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Travels | Form</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+<!--Navigation bar-->
+<header class="bg-light sticky-top">
+    <div class="row">
+        <div class="col-md-6 p-2 col-9">
+            <a href="#" class="navbar-brand" style="padding-left: 70px;">
+                <img src="images/tulip-logo.png" height="50" alt="CoolBrand">
+            </a>
+        </div> 
+        <div class="col-md-6 p-3 col-9 d-md-flex justify-content-md-end">
+            <a href="index.html" class="btn btn-info text-light stretched-link">Go Back</a>
+        </div> 
+    </div>
+</header>
+
+<!--Form-->
+<section>
+  <div class="container p-5">
+    <h3>Inquiry Form</h3>
+    <h5>We will get in touch with you shortly</h5>
+    <form action="form.php" method="post" class="bg-light p-5">
+      <label for="fname">First name</label><br>
+      <input type="text" id="fname" name="fname"> <br><br>
+      <label for="lname">Last name</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="phone">Contact number</label><br>
+      <input type="tel" id="phone" name="phone" ><br><br>
+      <label>Leave Your Message</label><br>
+      <textarea rows="5" cols="70" name="comment" form="usrform"></textarea><br><br>
+
+      <input type="button" onclick="formSubmit()" value="Submit">
+    </form>
+  </div>
+</section>
+
+<!--Contact-->
+<section id="contact">
+    <div class="row bg-black text-secondary p-2">
+      <div class="col-md-3">
+        <h4>Quick Links :</h4>
+        <a href="index.html" class="link-secondary">Home</a><br>
+        <a href="index.html" class="link-secondary">Services</a><br>
+        <a href="index.html" class="link-secondary">Packages</a><br>
+        <a href="index.html" class="link-secondary">Gallery</a><br>
+      </div>
+      <div class="col-md-3">
+        <h4>Be Social :</h4>
+      </div>
+      <div class="col-md-3">
+        <h4>Address :</h4>
+        <address>
+          Tulip Tours & Travels <br>
+          Tharayil Complex <br>
+          Market Road Aluva - 683101 <br>
+          Cochin ,Kerala
+        </address>
+
+      </div>
+      <div class="col-md-3">
+        Email : tuliptravelsaluva2009 <br>
+        Ph.No : 0484 2983965 <br>
+        +91 9387705465 ,+91 9746463966 <br>
+        +91 9656242547 ,+91 9846081191 <br>
+        +91 9496818486
+        
+
+
+      </div>
+    </div>
+  
+</section>
+
+<!--js link-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
