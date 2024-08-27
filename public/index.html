@@ -8,35 +8,7 @@
     <link rel="icon" type="image/png" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-      /* Ensure that padding and borders are included in the width and height */
-      * {
-          box-sizing: border-box;
-      }
-      /* Prevent horizontal overflow */
-      body {
-          overflow-x: hidden;
-      }
-
-      .responsive-image {
-            width: 100%;
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        /* Styles for larger screens (e.g., tablets, desktops) */
-        @media (min-width: 768px) {
-            .responsive-image {
-                height: 600px; /* Fixed height for web view */
-            }
-        }
-
-        /* Styles for smaller screens (e.g., mobile) */
-        @media (max-width: 767px) {
-            .responsive-image {
-                height: auto; /* Adjust height for mobile view */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body >
@@ -46,7 +18,7 @@
           <div class="row align-items-center">
               <!-- Left section: Logo -->
               <div class="col-6 col-md-5 p-2">
-                  <a href="#" class="navbar-brand" style="padding-left: 20px;">
+                  <a href="#" class="navbar-brand" style="padding-left: 20px; top: 0;">
                       <img src="images/tulip-logo.png" height="50" alt="CoolBrand">
                   </a>
               </div>
@@ -100,84 +72,82 @@
 <!--Services-->
 
 <section class="p-5" id="services">
-  <div class="container"> <br>
-    <h1 class="text-center">Services</h1>
-    <div class="row">
-      <div class="col-md-4 p-3">
-        <div class="card " >
-          <img src="images/service-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Flight Ticketing</h5>
-            <p class="card-text text-center">Find Domestic and International Air Tickets at lowest affordable price. Book the cheapest flight with Tulip Tours & Travels</p>
+  <div class="container"><br><br>
+      <h1 class="text-center">Services</h1>
+      <div class="row">
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-1.jpg" class="card-img-top" alt="Flight Ticketing">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">Flight Ticketing</h5>
+                      <p class="card-text text-center">Find Domestic and International Air Tickets at lowest affordable price. Book the cheapest flight with Tulip Tours & Travels</p>
+                  </div>
+              </div>
           </div>
-        </div>
+
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-2.jpg" class="card-img-top" alt="Train Ticketing">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">Train Ticketing</h5>
+                      <p class="card-text text-center">Find Train Tickets at lowest affordable price. Book the cheapest train tickets with Tulip Tours & Travels</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-3.jpg" class="card-img-top" alt="Bus Ticketing">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">Bus Ticketing</h5>
+                      <p class="card-text text-center">Find Bus Tickets at lowest affordable price. Book the cheapest bus tickets with Tulip Tours & Travels</p>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/service-2.jpg" class="card-img-top " alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Train Ticketing</h5>
-            <p class="card-text text-center">Find Train Tickets at lowest affordable price. Book the cheapest train tickets with Tulip Tours & Travels</p>
+      <div class="row">
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-4.jpg" class="card-img-top" alt="Domestic Tour Packages">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">Domestic Tour Packages</h5>
+                      <p class="card-text text-center">We can provide you best domestic packages at affordable rate. Book your budget friendly tour packages with Tulip Tours & Travels.</p>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/service-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Bus Ticketing</h5>
-            <p class="card-text text-center">Find Bus Tickets at lowest affordable price. Book the cheapest bus tickets with Tulip Tours & Travels</p>
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-5.jpg" class="card-img-top" alt="International Tour Packages">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">International Tour Packages</h5>
+                      <p class="card-text text-center">We can provide you best international packages at affordable rate. Book your budget friendly tour packages with us.</p>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-
-    <div class="row">
-      <div class="col-md-4 p-3">
-        <div class="card " >
-          <img src="images/service-4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Domestic Tour Packages</h5>
-            <p class="card-text text-center">We can provide you best domestic packages at affordable rate.Book your budget friendly tour packages with Tulip Tours & Travels.</p>
+          <div class="col-md-4 p-3">
+              <div class="card">
+                  <img src="images/service-6.jpg" class="card-img-top" alt="Hotel Booking">
+                  <div class="card-body">
+                      <h5 class="card-title text-info text-center">Hotel Booking</h5>
+                      <p class="card-text text-center">Find Best Hotel Rooms at lowest affordable price. Book the cheapest and best hotel rooms with Tulip Tours & Travels</p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/service-5.jpg" class="card-img-top " alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">International Tour Packages</h5>
-            <p class="card-text text-center">We can provide you best international packages at affordable rate.Book your budget friendly tour packages with us.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/service-6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Hotel Booking</h5>
-            <p class="card-text text-center">Find Best Hotel Rooms at lowest affordable price. Book the cheapest and best hotel rooms with Tulip Tours & Travels</p>
-          </div>
-        </div>
-      </div>
-    </div>
-      
   </div>
 </section>
 
 <!--Keral Packages-->
-<section class="bg-light p-5" id="packages"><br>
+<section class="bg-light p-5" id="packages"><br><br>
   <h1 class="text-center">Kerala Packages</h1>
   <div class="container">
     <div class="row">
       <div class="col-md-4 p-3">
         <div class="card" >
-          <img src="images/package-1.jpg" class="card-img-top" alt="...">
+          <img src="images/service-4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-info text-center">Kochi-Munnar-Kumarakam-Alleppey-Kochi</h5>
             <p class="card-text text-center">Trip duration : 5 Day</p>
@@ -191,10 +161,10 @@
 
       <div class="col-md-4 p-3">
         <div class="card" >
-          <img src="images/package-2.jpg" class="card-img-top" alt="...">
+          <img src="images/package-4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-info text-center">Mysore</h5>
-            <p class="card-text text-center">Trip duration : 2 Day & 1 Nights  <br>Starting price : Rs.8500</p>
+            <h5 class="card-title text-info text-center">Kochi-Munnar-Periyar-Thekkady-Alleppey-Kovalam-Trivandrum</h5>
+            <p class="card-text text-center">Trip duration : 7 Days</p>
           </div>
           <div class="p-3 text-center">
             <a href="package2.html" class="btn btn-primary stretched-link w-50">More Details</a>
@@ -204,56 +174,13 @@
 
       <div class="col-md-4 p-3">
         <div class="card" >
-          <img src="images/package-3.jpg" class="card-img-top" alt="...">
+          <img src="images/alleppy.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-info text-center">Delhi</h5>
-            <p class="card-text text-center">Trip duration : 3 Day <br>Starting price : Rs.9500</p>
+            <h5 class="card-title text-info text-center">Kochi-Munnar-Periyar-Thekkady-Alleppey-Kovalam-Kanyakumari-Trivandrum</h5>
+            <p class="card-text text-center">Trip duration : 8 Day</p>
           </div>
           <div class="p-3 text-center">
             <a href="package3.html" class="btn btn-primary stretched-link w-50">More Details</a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/package-4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Thiruvananthapuram</h5>
-            <p class="card-text text-center">Trip duration : 1 Day / 2 Day<br>Starting price : Rs.4500</p>
-          </div>
-          <div class="p-3 text-center">
-            <a href="package4.html" class="btn btn-primary stretched-link w-50">More Details</a>
-          </div>         
-        </div>
-      </div>
-
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/package-5.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Mumbai</h5>
-            <p class="card-text text-center">Trip duration : 3 Day  <br>Starting price : Rs.9500</p>
-          </div>
-          <div class="p-3 text-center">
-            <a href="package5.html" class="btn btn-primary stretched-link w-50">More Details</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 p-3">
-        <div class="card" >
-          <img src="images/package-6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-info text-center">Pilgrim Tours</h5>
-            <p class="card-text text-center">Trip duration : 2 Day / 3 Day <br>Starting price : Rs.5000</p>
-          </div>
-          <div class="p-3 text-center">
-            <a href="package6.html" class="btn btn-primary stretched-link w-50">More Details</a>
           </div>
         </div>
       </div>
@@ -265,7 +192,7 @@
 </section>
 
 <!--Packages-->
-<section class="bg-light p-5" id="packages"><br>
+<section class="p-5" id="packages"><br>
   <h1 class="text-center">Packages</h1>
   <div class="container">
     <div class="row">

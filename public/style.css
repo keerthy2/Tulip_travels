@@ -1,0 +1,59 @@
+/* Ensure that padding and borders are included in the width and height */
+* {
+    box-sizing: border-box;
+}
+/* Prevent horizontal overflow */
+body {
+    overflow-x: hidden;
+}
+
+.responsive-image {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Styles for larger screens (e.g., tablets, desktops) */
+  @media (min-width: 768px) {
+      .responsive-image {
+          height: 600px; /* Fixed height for web view */
+      }
+  }
+
+  /* Styles for smaller screens (e.g., mobile) */
+  @media (max-width: 767px) {
+      .responsive-image {
+          height: auto; /* Adjust height for mobile view */
+      }
+  }
+  /* Ensure the card images cover their container while maintaining aspect ratio */
+  .card-img-top {
+      width: 100%;
+      height: 200px; /* Default height for larger screens */
+      object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      .card-img-top {
+          height: 200px; /* Reduced height for mobile screens */
+      }
+  }
+
+  /* Ensure card body is of equal height for all cards */
+  .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+
+  .card-body {
+      flex: 1; /* Ensure the card body grows to fill available space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+  }
+
+  .card-text {
+      flex-grow: 1; /* Allow text to grow and fill space if needed */
+  }
